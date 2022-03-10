@@ -1,6 +1,6 @@
 import * as path from "path";
 import { checkENV } from "./utils";
-import {AbiItem} from "caver-js";
+import { AbiItem } from "caver-js";
 
 export async function init() {
   const ENV = process.env.NODE_ENV;
@@ -50,6 +50,7 @@ export async function init() {
     CA_V1_DEPLOYED_ADDRESS: process.env.CA_V1_DEPLOYED_ADDRESS,
     BRAG_DEPLOYED_ADDRESS: process.env.BRAG_DEPLOYED_ADDRESS,
     PRESALE_DEPLOYED_ADDRESS: process.env.PRESALE_DEPLOYED_ADDRESS,
+    AGENDA_DEPLOYED_ADDRESS: process.env.AGENDA_DEPLOYED_ADDRESS,
 
     // ABI
     CA_ABI: require("./contracts/CA_V1.json") as AbiItem,
